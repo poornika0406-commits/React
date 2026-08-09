@@ -1,20 +1,28 @@
-function Welcome() {
-  return <h1>My React Learning Journey Starts from today</h1>;
-}
-function Skills() {
-  return <h2>This is my skill enhancement</h2>;
-}
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
+import Card from "./components/Card";
 
-function Message(){
-  return<p>Maintain this courage and be consistent </p>;
-}
+
 function App() {
   return (
+    <>
+    <Header />
+    <Navbar/>
     <div>
-      <Welcome />
-      <Skills/>
-      <Message />
+    <Sidebar/>
+
+    <main>
+     
+      <Card/>
+      
+      </main>
     </div>
+    <Footer/>
+   
+
+    </>
   );
 }
 
