@@ -1,27 +1,33 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
-import Card from "./components/Card";
-
+import Task3 from "./practice2/Task3";
 
 function App() {
   return (
     <>
-    <Header />
-    <Navbar/>
-    <div>
-    <Sidebar/>
+      <h1>Student Dashboard</h1>
 
-    <main>
-     
-      <Card/>
-      
-      </main>
-    </div>
-    <Footer/>
-   
+      <Task3
+        name="Ramesh"
+        age={20}
+        course="Computer Science"
+        college="ABC College"
+        image="https://via.placeholder.com/150"
+      />
 
+      <Task3
+        name="Priya"
+        age={21}
+        course="Artificial Intelligence"
+        college="XYZ College"
+        image="https://via.placeholder.com/150"
+      />
+
+      <Task3
+        name="Rahul"
+        age={19}
+        course="Data Science"
+        college="PQR College"
+        image="https://via.placeholder.com/150"
+      />
     </>
   );
 }
