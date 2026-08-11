@@ -1,34 +1,33 @@
-import Task3 from "./practice2/Task3";
+import EmployeeCard from "./practice3/EmployeeCard";
 
 function App() {
   return (
-    <>
-      <h1>Student Dashboard</h1>
-
-      <Task3
-        name="Ramesh"
-        age={20}
-        course="Computer Science"
-        college="ABC College"
-        image="https://via.placeholder.com/150"
-      />
-
-      <Task3
-        name="Priya"
-        age={21}
-        course="Artificial Intelligence"
-        college="XYZ College"
-        image="https://via.placeholder.com/150"
-      />
-
-      <Task3
+      <div>
+       
+       <h1>Empoyee Profile</h1>
+   
+ 
+      <EmployeeCard
         name="Rahul"
-        age={19}
-        course="Data Science"
-        college="PQR College"
-        image="https://via.placeholder.com/150"
+        job="Web Developer"
+        salary={50000}
+        experience={2}
       />
-    </>
+
+      <EmployeeCard
+        name="Priya"
+        job="UI Designer"
+        salary={45000}
+        experience={3}
+      />
+
+      <EmployeeCard
+        name="Ramesh"
+        job="Java Developer"
+        salary={60000}
+        experience={4}
+      />
+    </div>
   );
 }
 
